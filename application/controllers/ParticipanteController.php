@@ -1,0 +1,10 @@
+<?php
+
+class ParticipanteController extends Zend_Controller_Action
+{
+	
+	public function indexAction()
+	{
+		
+	}
+}
