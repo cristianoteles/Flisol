@@ -1,0 +1,21 @@
+<a href="<?php echo $this->baseUrl(); ?>/salas/formulario">Inserir Novo Registro</a><br />
+<div id="listagem">
+<table border="2">
+	<tr>
+		<th>Nome</th>
+		<th>Bloco</th>
+		<th>Quantidade de pessoas</th>
+	</tr>
+<?php 
+foreach($this->salas as $sala) {
+    echo '
+    	<tr>
+    		<td><a href="' . $this->baseUrl() . '/salas/formulario/id/' . $sala->id . '">' . $sala->nome . '</a></td>
+    		<td>' . $sala->bloco . '</td>
+    		<td>' . $sala->qt_pessoas . '</td>
+    	</tr>
+    ';
+}
+?>
+</table>
+</div>

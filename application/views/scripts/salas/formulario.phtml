@@ -1,0 +1,36 @@
+<?php
+// Sala.php
+/**
+ * View do formulário de sala
+ * @filesource  07/03/2010
+ * @author      Estrada Virtual <http://estradavirtual.com.br>
+ * @copyright   Copyright <2010> Estrada Virtual
+ * @package     <<application>>
+ * @subpackage  <<application>>.application.views
+ * @version     $Id$
+ */
+ ?>
+
+<div id="divFormulario">
+	<form action="<?php echo $this->baseUrl() ?>/salas/gravar" method="post" name="formulario" id="formulario">
+		<input type="hidden" name="id" id="id" value="<?php echo $this->sala->id ?>" />
+        <div>
+            <label for="nome">Nome: </label><br />
+            <input  type="text" name="nome" id="nome" value="<?php echo $this->sala->nome; ?>" title="Nome"  maxlength="45" />
+        </div>
+        <div>
+            <label for="bloco">Bloco: </label><br />
+            <input  type="text" name="bloco" id="bloco" value="<?php echo $this->sala->bloco; ?>" title="Bloco"  maxlength="4" />
+        </div>
+        <div>
+            <label for="complemento">Complemento: </label><br />
+            <input  type="text" name="complemento" id="complemento" value="<?php echo $this->sala->complemento; ?>" title="Complemento"  maxlength="45" />
+        </div>
+        <div>
+            <label for="qt_pessoas">Quantidade de pessoas que cabem na sala&nbsp;<span class="campoObrigatorio">*</span>: </label><br />
+            <input class="required" type="text" name="qt_pessoas" id="qt_pessoas" value="<?php echo $this->sala->qt_pessoas; ?>" title="Quantidade de pessoas que cabem na sala"  maxlength="45" />
+        </div>
+		
+		<input type="submit" name="enviar" id="enviar" value="Gravar" />
+	</form>
+</div>

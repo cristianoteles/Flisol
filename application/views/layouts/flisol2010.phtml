@@ -1,0 +1,45 @@
+<?php $baseUrl = $this->baseUrl(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>FLISOL 2010 - Sistema de inscrições</title>
+        <base href="<?php echo $baseUrl; ?>"/>
+        
+        <link rel="shortcut icon" href="<?php echo $baseUrl ?>/img/icone/" type="image/x-icon"/>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
+        
+        <!--  Estilos -->
+		<?php echo $this->headLink()->appendStylesheet( $baseUrl . '/css/flisol2010.css') ?>
+        
+        <!-- jquery -->
+        <script type="text/javascript" src="<?php echo $baseUrl ?>/js/jquery-1.4.2.min.js"></script>
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="header">
+				<h1><a href="#index">FLISOL</a></h1>
+				<ul>
+					<li><a href="<?php echo $baseUrl; ?>/configuracoes">CONFIGURAÇÕES</a></li>
+					<li><a href="<?php echo $baseUrl; ?>/palestrantes">PALESTRANTES</a></li>
+					<li><a href="<?php echo $baseUrl; ?>/inscricoes">INSCRIÇÕES</a></li>
+					<li><a href="<?php echo $baseUrl; ?>/atividades">ATIVIDADES</a></li>
+				</ul>
+			</div>
+			<div id="content">
+            	<h2>Sistema de inscrições</h2>
+                <?php echo $this->layout()->content ?>
+        	</div>
+			<div id="footer">
+				<p id="poweredby">
+					<img src="<?php echo $baseUrl; ?>/imgs/footer-poweredby.png" border="0" />
+				</p>
+				
+				<p id="info">
+					<strong>DESENVOLVIMENTO</strong><br />
+					Faculdade Jesus Maria José - FAJESU<br />
+					Comunidade PHPDF
+				</p>
+			</div>
+        </div>
+    </body>
+</html>

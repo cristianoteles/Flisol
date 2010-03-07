@@ -1,0 +1,226 @@
+body{
+	padding-top:14px;
+	background:#000 url("../imagens/bg.jpg") repeat-x;
+	margin:0px;
+}
+
+/*
+Desc: Todas as divs terão fontes com arial
+*/
+div{
+	font-family:Arial;
+	font-size:12px
+}
+/*
+Desc: define a cor de todos os links
+*/
+a{
+	color:#F60;
+	text-decoration:none;
+}
+/*
+Desc: troca a cor quando o mouse passa por cima de qualquer link
+*/
+a:hover{
+	color:#FC0;
+	text-decoration:underline;
+}
+
+input[type=submit]{
+	background: #F60;
+	padding:3px;
+	color:#FFF;
+	border:0px;
+}
+input[type=text]{
+	width:100%;
+	background: #FFF;
+	padding:3px;
+	color:#666;
+	border:#DFDFDF solid 1px;
+}
+form input[type=submit]:hover{
+	background: #FC0;
+	padding:3px;
+	color:#333;
+	border:0px;
+	cursor:pointer;
+}
+select{
+	background: #FFF;
+	padding:3px;
+	color:#666;
+	border:#DFDFDF solid 1px;
+}
+textarea{
+	width:100%;
+	background: #FFF;
+	padding:3px;
+	color:#666;
+	border:#DFDFDF solid 1px;
+}
+
+
+/*
+===========================================================================
+	SELETORES POR ID
+===========================================================================
+*/
+
+/*
+id  : wrapper
+Desc: Centraliza a div wrapper no centro da página.
+*/
+div#wrapper{
+	width:990;
+	border:#F00 solid 0px;
+	background-color:#FFF;
+	margin:0 auto;
+}
+
+/*
+id  : header
+Desc: posiciona a logomarca e os menus de navegação!
+*/
+div#wrapper div#header{
+	border:#00F solid 0px;
+	background:url("../imagens/bg-header.jpg") no-repeat;
+	height:104px;
+}
+
+/*
+tag  : h1
+Desc: Carrega a imagem/logomarca no fundo do h1 e remove o texto[FLISOL]
+*/
+div#wrapper div#header h1{
+	border:#FF0 solid 0px;
+	background:url("../imagens/logo-flisol.png") no-repeat;
+	margin:0px;
+	float:left;
+	width:160px;
+	height:80px;
+	text-indent: -500px;
+}
+
+/*
+tag  : ul
+Desc: posiciona o menu do sistema a direita da div header
+*/
+div#wrapper div#header ul{
+	border:#FF0 solid 0px;
+	margin:25px 0px 0px 0px;
+	float:right;
+	width:75%;
+}
+
+/*
+tag  : li
+Desc: lista os itens do menu a direita
+*/
+div#wrapper div#header ul li{
+	border:#FF0 solid 0px;
+	padding:5px 20px 0px 0px;
+	float:right;
+	list-style:none;
+}
+
+/*
+tag  : a
+Desc: define cor vermelho para os textos dentro da tag a
+*/
+div#wrapper div#header ul li a{
+	color:#F00;
+	text-decoration:none;
+}
+
+/*
+tag  : a-hover
+Desc: troca a cor e ativa o sublinhado do texto dentro da tag a quando o mouse está em cima
+*/
+div#wrapper div#header ul li a:hover{
+	color:#FC0;
+	text-decoration:underline;
+}
+
+
+/*
+id  : content
+Desc: Área principal, local dos formulários
+*/
+div#wrapper div#content{
+	background:url("../imagens/bg-content.jpg") no-repeat;
+	padding:5px;
+	height:auto;
+}
+
+/*
+id  : h2
+Desc: Área principal, local dos formulários
+*/
+div#wrapper div#content h1, h2, h3, h4, h5{
+	margin:0px;
+	color:#F60;
+}
+
+/*
+tag  : hr (linha)
+Desc: Área principal, local dos formulários
+*/
+div#wrapper div#content hr{
+	clear:both;
+}
+
+/*
+id  : footer
+Desc: 
+*/
+div#wrapper div#footer{
+	background:url("../imagens/bg-footer.jpg") repeat-x;
+	height:50px;
+	padding: 30px 10px;
+	margin:0px 0px 30px 0px;
+}
+
+/*
+tag  : p
+Desc: Imagem das tecnologias utilizados
+*/
+div#wrapper div#footer p#poweredby {
+	padding: 0px;
+	float:left;
+}
+
+/*
+tag  : p
+Desc: Informações, créditos
+*/
+div#wrapper div#footer p#info {
+	padding: 5px 0px;
+	float:right;
+	text-align:right;
+	font-size:10px;
+	color:#FFF;
+}
+
+
+/*
+===========================================================================
+	SELETORES POR CLASSE
+===========================================================================
+*/
+
+div.w50{
+	width:47%;
+	float:left;
+	padding:3px;
+	margin-right:3px;
+	border:#E6E6E6 solid 0px;
+}
+
+div.w30{
+	width:32%;
+	float:left;
+	padding:3px;
+	margin-right:3px;
+	border:#E6E6E6 solid 0px;
+}
